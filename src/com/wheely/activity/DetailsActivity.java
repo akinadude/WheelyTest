@@ -55,8 +55,9 @@ public class DetailsActivity extends Activity {
 		mBackButton.setVisibility(View.VISIBLE);
 		mBackButton.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View v) {
+			public void onClick(View v) {				
 				finish();
+				overridePendingTransition(R.anim.activity_return, R.anim.activity_close);
 			}
 		});
 		

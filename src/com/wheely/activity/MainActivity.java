@@ -110,7 +110,8 @@ public class MainActivity extends Activity {
 				
 				Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
 				intent.putExtra(Utils.DETAILS_ACTIVITY_TAG, jsonSerializedItem);				
-				startActivity(intent);				
+				startActivity(intent);
+				overridePendingTransition(R.anim.activity_open, R.anim.activity_exit);
 			}
 		});
 		
