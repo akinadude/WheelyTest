@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <color name="holo_light_gray">#AA333333</color>    
+    <color name="background_gray">#20333333</color>
+    <color name="caption_bar_background">#60333333</color>
+    
+    <color name="blue">#AA4ABCED</color>
+    
+</resources>

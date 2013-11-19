@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <include 
+        android:id="@+id/caption_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/caption_bar" />    
+
+    <ListView
+        android:id="@+id/items_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/caption_bar"
+        android:layout_centerInParent="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"       
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/activity_vertical_padding"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding"
+        android:paddingTop="@dimen/activity_vertical_padding"
+        android:scrollbarStyle="outsideOverlay"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+    
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Large"        
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/no_data_loaded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"	        	        
+        android:layout_centerInParent="true"
+        android:gravity="center"              
+        android:textColor="@color/holo_light_gray"
+        android:textSize="24sp"
+        android:text="@string/no_data_loaded_stub"
+        android:visibility="gone" />
+
+</RelativeLayout>
